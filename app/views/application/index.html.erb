@@ -1,10 +1,10 @@
 <%= stylesheet_link_tag 'main_theme'%>
-<%= javascript_include_tag 'jquery-1.10.0-beta1.min'%>
+<%= javascript_include_tag 'jquery.min.js'%>
 <%= javascript_include_tag 'main_theme'%>
 <div id="step-1">
   <div class="big-word">НАЧНИ СВОЙ КВЕСТ</div>
   <div  class="code-activator">
-    <div style="color:white">Введи Свой Код</div>
+    <div style="color:white">Введи Код</div>
     <input type="number" id="code-number" style="text-align: center"/>
     <input type="button" value=">>" id="check-code" title="Проверить Код"/>
     <div class="warning"></div>
@@ -12,11 +12,27 @@
 </div>
 
 <div id="step-2" style="display: none">
-  
+  <div class="big-word">СЛУШАЙ МЕНЯ</div>
+  <div class="code-activator">
+    <div style="color:white">Первое Задание будет самым сложым.</div>
+    <div style="color:white">Чтобы пройти его, тебе придется использовать клавишу F12.</div>
+    <div style="color:white">Буську Мужу, если ничего не получится.</div>
+    <input type="button" value="Начать" id="begin" title="Начать Квест"/>
+  </div>
 </div>
 
 <div id="step-3" style="display: none">
-
+  <div class="big-word">Первое задание Пройдено! Молодец)</div>
+  <svg>
+    <g></g>
+    <g>
+      <circle r="49" cx="100" cy="50" fill="yellow" stroke="red" stroke-width="3"></circle>
+      <text x="60" y="70" font-family="Verdana" font-size="60" fill="blue" >25</text>
+    </g>
+    <!--<g>-->
+      <!--<line x1="130" y1="90" x2="285" y2="195" style="fill:black; stroke:yellow; stroke-width:4"></line>-->
+    <!--</g>-->
+  </svg>
 </div>
 
 <div id="step-4" style="display: none">
