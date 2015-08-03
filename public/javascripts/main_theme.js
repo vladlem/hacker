@@ -8,7 +8,7 @@
              $('#step-2').show();
 
              setTimeout(function(){
-                 $('.first-task').slideDown(1000);
+                 $('.first-task').slideDown(1000); //TODO
              }, 1000);
          } else  {
              $warning.append('<p>Неверный Код! Попробуй Еще Раз!</p>')
@@ -32,10 +32,6 @@
            if ($('#code-name').val() == '39lb650v') {
                $('#step-4').hide();
                $('#step-5').show();
-
-               setTimeout(function(){
-                   $('.first-task').slideDown(1000);
-               }, 1000);
            } else  {
                $warning.append('<p>Неверное Имя! Попробуй Еще Раз!</p>')
            }
@@ -50,16 +46,18 @@
        $('#varenik-code').click( function() {
            var $warning = $('.warning');
            $warning.find('p').remove();
-           if (parseInt($('#varenik-number').val()) == 3215) {
+           if ($('#varenik-text').val() == '') {
                $('#step-6').hide();
                $('#step-7').show();
-
-               setTimeout(function(){
-                   $('.first-task').slideDown(1000);
-               }, 1000);
            } else  {
-               $warning.append('<p>Неверное Имя! Попробуй Еще Раз!</p>')
+               $warning.append('<p>Неверный Ответ! Попробуй Еще Раз!</p>')
            }
+       });
+
+       $('#fourth-task').click(function() {
+           $('#step-7').hide();
+           $('#step-8').show();
+           $('body').css('background-color','blue');
        });
    });
 })(jQuery);
