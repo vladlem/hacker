@@ -4,7 +4,7 @@
 <div id="step-1">
   <div class="big-word">НАЧНИ СВОЙ КВЕСТ</div>
   <div  class="code-activator">
-    <div style="color:white">Введи Код</div>
+    <div>Введи Код...</div>
     <input type="number" id="code-number" style="text-align: center"/>
     <input type="button" value=">>" id="check-code" title="Проверить Код"/>
     <div class="warning"></div>
@@ -13,33 +13,87 @@
 
 <div id="step-2" style="display: none">
   <div class="big-word">СЛУШАЙ МЕНЯ</div>
-  <div class="code-activator">
-    <div style="color:white">Первое Задание будет самым сложым.</div>
-    <div style="color:white">Чтобы пройти его, тебе придется использовать клавишу F12.</div>
-    <div style="color:white">Буську Мужу, если ничего не получится.</div>
-    <input type="button" value="Начать" id="begin" title="Начать Квест"/>
+  <div class="audio">
+    <audio controls>
+      <source src="/audio/begin_audio.mp3" type="audio/mpeg">
+      Your browser does not support the audio tag.
+    </audio>
+  </div>
+  <div class="first-task" style="display: none">
+    <div>Первое Задание будет самым сложым.</div>
+    <div>Чтобы пройти его, тебе придется использовать клавишу F12.</div>
+    <input type="image" src="/images/arrow-medium.png" value="Начать" id="begin" title="Начать Квест"/>
+    <p>* Буську Мужу, если ничего не получится ;)</p>
   </div>
 </div>
 
 <div id="step-3" style="display: none">
-  <div class="big-word">Первое задание Пройдено! Молодец)</div>
-  <svg>
+  <div class="big-word">Первое задание Пройдено! Молодец :)</div>
+  <svg id="first-number">
     <g></g>
     <g>
       <circle r="49" cx="100" cy="50" fill="yellow" stroke="red" stroke-width="3"></circle>
       <text x="60" y="70" font-family="Verdana" font-size="60" fill="blue" >25</text>
     </g>
-    <!--<g>-->
-      <!--<line x1="130" y1="90" x2="285" y2="195" style="fill:black; stroke:yellow; stroke-width:4"></line>-->
-    <!--</g>-->
   </svg>
+  <div class="audio first-task">
+    <p>Идем Дальше...</p>
+    <input type="image" src="/images/arrow-medium.png" value="Начать" id="second-task" title="Следующее задание"/>
+  </div>
 </div>
 
 <div id="step-4" style="display: none">
-
+  <div class="medium-word">
+    <div>Он в центре комнаты стоит</div>
+    <div>И всех манит, манит, манит...</div>
+    <div>Его бы имя нам узнать!</div>
+    <div>Ведь ты достойна его знать!</div>
+  </div>
+  <div  class="second-task">
+    <div>Введи Имя...</div>
+    <input type="text" id="code-name" style="text-align: center"/>
+    <input type="button" value=">>" id="check-name" title="Проверить Имя"/>
+    <div class="warning"></div>
+  </div>
 </div>
 
 <div id="step-5" style="display: none">
+  <div class="big-word">Опять Молодец :) Вот тебе бонус!</div>
+  <svg width="1000" id="second-number">
+    <g></g>
+    <g>
+      <circle r="49" cx="420" cy="80" fill="yellow" stroke="green" stroke-width="3"></circle>
+      <text x="380" y="100" font-family="Verdana" font-size="60" fill="blue" >25</text>
+    </g>
+  </svg>
+  <div class="audio first-task">
+    <p>Идем Дальше...</p>
+    <input type="image" src="/images/arrow-medium.png" value="Начать" id="third-task" title="Следующее задание"/>
+  </div>
+</div>
+
+<div id="step-6" style="display: none">
+  <div class="medium-word">
+    <div>Варенник носит номер полдня</div>
+    <div>Попробуй, найди его не спеша!</div>
+  </div>
+  <div  class="third-task">
+    <div>Введи Код...</div>
+    <input type="number" id="varenik-number" style="text-align: center"/>
+    <input type="button" value=">>" id="varenik-code" title="Проверить Код"/>
+    <div class="warning"></div>
+  </div>
+</div>
+
+<div id="step-7" style="display: none">
+
+</div>
+
+<div id="step-8" style="display: none">
+
+</div>
+
+<div id="finish" style="display: none">
 
 </div>
 

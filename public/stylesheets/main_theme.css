@@ -2,15 +2,44 @@ body {
     background-color: rgba(1, 1, 1, 1);
     font-family: "Raleway",Helvetica,Arial,sans-serif;
     font-weight: 400;
+    color:lightgoldenrodyellow;
 }
 .code-activator {
     text-align:center;
     margin-top: 20%;
     font-size: 0.8cm;
 }
+.first-task {
+    text-align:center;
+    margin-top: 10%;
+    font-size: 0.8cm;
+    color:lightgoldenrodyellow;
+}
+.second-task {
+    text-align:center;
+    font-size: 0.8cm;
+    margin-top: 20%;
+    color:yellow;
+}
+.third-task {
+    text-align:center;
+    font-size: 0.8cm;
+    margin-top: 20%;
+    color:lightgoldenrodyellow;
+}
+.audio {
+    text-align:center;
+    margin-top: 5%;
+}
 .big-word {
     font-size: 2cm;
-    color:white;
+    color:lightyellow;
+    margin-top: 10%;
+    text-align: center;
+}
+.medium-word {
+    font-size: 1cm;
+    color:yellow;
     margin-top: 10%;
     text-align: center;
 }
