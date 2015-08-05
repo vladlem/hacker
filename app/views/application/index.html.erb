@@ -33,7 +33,7 @@
     <g></g>
     <g>
       <circle r="49" cx="100" cy="50" fill="yellow" stroke="red" stroke-width="3"></circle>
-      <text x="60" y="70" font-family="Verdana" font-size="60" fill="blue" >25</text>
+      <text x="60" y="70" font-family="Verdana" font-size="60" fill="blue" >92</text>
     </g>
   </svg>
   <div class="audio first-task">
@@ -58,15 +58,18 @@
 </div>
 
 <div id="step-5" style="display: none">
-  <div class="big-word">Опять Молодец :) Вот тебе бонус!</div>
+  <div class="big-word">
+    <div>Опять Молодец :)</div>
+    <div>Вот тебе бонус!</div>
+  </div>
   <svg width="1000" id="second-number">
     <g></g>
     <g>
       <circle r="49" cx="420" cy="80" fill="yellow" stroke="green" stroke-width="3"></circle>
-      <text x="380" y="100" font-family="Verdana" font-size="60" fill="blue" >25</text>
+      <text x="380" y="100" font-family="Verdana" font-size="60" fill="blue" >53</text>
     </g>
   </svg>
-  <div class="second-task">
+  <div class="third-task">
     <p>Идем Дальше...</p>
     <input type="image" src="/images/arrow-medium.png" value="Начать" id="third-task" title="Следующее задание"/>
   </div>
@@ -79,7 +82,7 @@
     <div>Что-то носит под одежкой.</div>
     <div>Ты попробуй отгадать!</div>
   </div>
-  <div  class="third-task">
+  <div  class="second-task">
     <div>Введи Ответ...</div>
     <input type="text" id="varenik-text" style="text-align: center"/>
     <input type="button" value=">>" id="varenik-code" title="Проверить Ответ"/>
@@ -88,12 +91,15 @@
 </div>
 
 <div id="step-7" style="display: none">
-  <div class="big-word">Ты справилась и с этим заданием! Осталось только одно ;)</div>
-  <svg width="1500" id="second-number">
+  <div class="big-word">
+    <div>Ты справилась c заданием!</div>
+    <div>Осталось только одно ;)</div>
+  </div>
+  <svg width="1500" height="150" id="second-number">
     <g></g>
     <g>
-      <circle r="49" cx="620" cy="40" fill="yellow" stroke="green" stroke-width="3"></circle>
-      <text x="580" y="60" font-family="Verdana" font-size="60" fill="blue" >25</text>
+      <circle r="49" cx="820" cy="100" fill="orange" stroke="yellow" stroke-width="3"></circle>
+      <text x="780" y="120" font-family="Verdana" font-size="60" fill="red" >01</text>
     </g>
   </svg>
   <div class="third-task">
@@ -109,29 +115,44 @@
     <div>Она вся замерзла.</div>
     <div>Пойди, разгадай!</div>
   </div>
-  <div  class="third-task">
+  <div  class="second-task">
     <div>Введи Ответ...</div>
-    <input type="text" id="varenik-text" style="text-align: center"/>
-    <input type="button" value=">>" id="varenik-code" title="Проверить Ответ"/>
+    <input type="text" id="chicken-text" style="text-align: center"/>
+    <input type="button" value=">>" id="chicken-code" title="Проверить Ответ"/>
     <div class="warning"></div>
   </div>
 </div>
 
-<div id="finish" style="display: none">
-  <div class="big-word">Ты прошла все задания! Осталось чуть-чуть :)</div>
-  <svg width="1500" id="second-number">
+<div id="step-9" style="display: none">
+  <div class="big-word">
+    <div>Ты прошла все задания! </div>
+    <div>Осталось чуть-чуть :)</div>
+  </div>
+  <svg width="1500" height="200" id="second-number">
     <g></g>
     <g>
-      <circle r="49" cx="620" cy="40" fill="yellow" stroke="green" stroke-width="3"></circle>
-      <text x="580" y="60" font-family="Verdana" font-size="60" fill="blue" >25</text>
+      <circle r="49" cx="1100" cy="60" fill="orange" stroke="yellow" stroke-width="3"></circle>
+      <text x="1060" y="80" font-family="Verdana" font-size="60" fill="deeppink" >95</text>
     </g>
   </svg>
-  <div class="third-task">
-    <p>Финиш!!!</p>
-    <input type="image" src="/images/arrow-medium.png" value="Начать" id="finish" title="Узнать ответ!"/>
+  <div class="fourth-task">
+    <input type="image" src="/images/finished-md.png" value="Финиш" id="finish" title="Узнать ответ!"/>
   </div>
 </div>
 
-<div id="finish" style="display: none">
-
+<div id="step-10" style="display: none">
+  <div class="finish">С Днем рождения!!!</div>
+  <div class="finish-audio">
+    <div>Жми Прослушать!</div>
+    <audio controls>
+      <source src="/audio/finish_audio.mp3" type="audio/mpeg">
+      Your browser does not support the audio tag.
+    </audio>
+  </div>
+  <div class="bonus" style="display: none">
+    2573+
+  </div>
+  <div class="bottom">
+   <input type="image" src="/images/lets-start-again.png" id="restart" title="Начать Заново!"/>
+  </div>
 </div>
